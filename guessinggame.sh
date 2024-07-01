@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 #!File Name: guessinggame.sh
 
+#Created a function for asking a number to be entered
 function guess {
 echo "Guess how many files are in this directory?"
 echo "Please enter a number:"
@@ -10,7 +11,7 @@ guessednumber=$number
 
 guess
 
-echo "you have entered $guessednumber"
+echo "Let's find out if $guessednumber is the correct answer"
 
 nof=0
 for i in $(ls)
@@ -29,4 +30,5 @@ do
 		guess
 	fi
 done
-echo "Congratulations!! You have guessed the right number. There are $guessednumber files."	
+echo "Congratulations!! You have guessed the number of files correctly."
+echo "Number of files in this directory = $guessednumber"	
