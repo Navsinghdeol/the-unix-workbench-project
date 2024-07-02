@@ -9,11 +9,11 @@ read number
 guessednumber=$number
 }
 
-guess
+guess	# called the function we created above
 
 echo "Let's find out if $guessednumber is the correct answer"
 
-nof=0
+nof=0	#declared a varible to store the number of files
 for i in $(ls)
 do
 	let nof=$nof+1
